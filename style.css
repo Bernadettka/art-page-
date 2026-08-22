@@ -1,20 +1,37 @@
+:root {
+    /* Colors */
+    --color-bg: #fff8ed;
+    --color-primary: #c1603a;
+    --color-primary-hover: #a84e2c;
+    --color-text: #4a4a4a;
+    --color-heading: #2c2c2c;
+    --color-border: #e0d4c0;
+
+    /* Fonts */
+    --font-body: "DM Sans", sans-serif;
+    --font-heading: "Fraunces", serif;
+
+    --page-padding-inline: 5rem;
+    --page-padding-block:1rem;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: #fff8ed;
-    font-family: "DM Sans", sans-serif;
+    background-color: var(--color-bg);
+    font-family: var(--font-body)
 }
 .image-paws{
     height: 50px;
 }
 .header-wrapper{
     display: flex;
-    padding: 20px 120px;
     justify-content: space-between;
     align-items: center;
+    padding-inline: var(--page-padding-inline);
+    padding-block: var(--page-padding-block);
 }
 .header-wrapper ul{
     list-style: none;
@@ -24,10 +41,10 @@ body {
 .header-wrapper nav a{
     text-decoration: none;
     transition: 0.3s;
-    color: #4a4a4a;
+    color: var(--color-text)
 }
 .header-wrapper nav a:hover{
-    color: #c1603a;
+    color: var(--color-primary)
 }
 .header-logo{
     display: flex;
@@ -38,15 +55,14 @@ body {
     font-size: 1.2rem;
     font-family: "Fraunces", serif;
     font-weight: bold;
-    color: #2c2c2c;
+    color: var(--color-heading)
 }
 .header-line{
     height: 2px;
-    background-color: #e0d4c0 ;
+    background-color: var(--color-border) ;
 }
 .btn{
-    border: none;
-    background-color: #c1603a;
+    background-color: var(--color-primary);
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px;
@@ -55,7 +71,7 @@ body {
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #a84e2c;
+    background-color: var(--color-primary-hover);
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
     color: white;
 }
@@ -65,4 +81,38 @@ body {
     gap: 40px;
     align-items: center;
 }
+.hero {
+    padding-inline: var(--page-padding-inline);
+    padding-block: var(--page-padding-block);
+}
+.hero-container-left{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    justify-content: flex-start;
+}
+.hero-container-left img{
+    width: 25rem;
+}
+.objednaj-btn{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.objednaj-btn:hover{
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 30px;
+    padding: 20px 20px;
+    border-color: var(--color-primary);
+}
+.hero-btns{
+    display: flex;
 
+}
