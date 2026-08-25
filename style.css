@@ -1,18 +1,27 @@
 :root {
+    /* backrounds */
+    --color-bg-main: #fefcf9;
+    --color-bg-alt: #f5f0e8;
+
+    --color-bg-image: #ede6d8;
+    --color-bg-image-alt: #e8dece;
     /* Colors */
-    --color-bg: #fff8ed;
     --color-primary: #c1603a;
     --color-primary-hover: #a84e2c;
     --color-text: #4a4a4a;
-    --color-heading: #2c2c2c;
+    --color-heading:  #241c17;
     --color-border: #e0d4c0;
-
+    --color-text-primary: #1c1814;
+    --color-text-medium: #3e3830;
+    --color-text-secondary: #6a6258;
+    --color-text-muted: #a89e94;
+    --color-text-ghost: #c4bdb4;
     /* Fonts */
     --font-body: "DM Sans", sans-serif;
-    --font-heading: "Fraunces", serif;
+    --font-heading: "Caveat", sans-serif;
 
     --page-padding-inline: 5rem;
-    --page-padding-block:1rem;
+    --page-padding-block:1.7rem;
 }
 *{
     padding: 0;
@@ -20,7 +29,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-main);
     font-family: var(--font-body)
 }
 .image-paws{
@@ -41,7 +50,8 @@ body {
 .header-wrapper nav a{
     text-decoration: none;
     transition: 0.3s;
-    color: var(--color-text)
+    color: var(--color-text);
+    font-weight: 600;
 }
 .header-wrapper nav a:hover{
     color: var(--color-primary)
@@ -52,8 +62,8 @@ body {
     gap:10px
 }
 .header-logo span{
-    font-size: 1.2rem;
-    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
     font-weight: bold;
     color: var(--color-heading)
 }
@@ -84,13 +94,24 @@ body {
 .hero {
     padding-inline: var(--page-padding-inline);
     padding-block: var(--page-padding-block);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
 }
 .hero-container-left{
     display: flex;
     flex-direction: column; 
-    gap: 10px; 
     justify-content: flex-start;
+    gap: 30px;
 }
+
+.hero-bg{
+    background-image: url("assets/images/drawedpaw3.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 55% auto;
+}
+
 .hero-container-left img{
     width: 25rem;
 }
@@ -101,8 +122,9 @@ body {
     padding: 20px 20px;
     border-radius: 30px;
     color: white;
-    transition: 0.3s;
+    transition: 0.4s;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 .objednaj-btn:hover{
     background-color: white;
@@ -114,5 +136,71 @@ body {
 }
 .hero-btns{
     display: flex;
-
+    gap: 17px;
+}
+.galeria-btn{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    font-weight: bold;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 35px;
+    color: var(--color-text-secondary);
+    transition: 0.4s;
+    cursor: pointer;
+    border: 2px solid var(--color-text-secondary);
+    font-size: 1.2rem;
+}
+.galeria-btn:hover{
+    background-color:var(--color-text-secondary);
+    color: white;
+    border-radius: 35px;
+    padding: 20px 20px;
+}
+.hero-container-left h2{
+    font-size: 6rem;
+    font-family: var(--font-heading);
+}
+.hero-container-left h1{
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 6rem;
+}
+.hero-container-left span{
+    color: var(--color-heading);
+    max-width: 30rem;
+    font-size: 1.28rem;
+    line-height: 1.7;
+}
+.hero-container-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.grid-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.tvoja-fotka{
+    text-decoration: none;
+    background-color: var(--color-text-muted);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 135px;
+    border-radius: 30px;
+}
+.tvoj-portret{
+    text-decoration: none;
+    background-color: var(--color-text-muted);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 10px 135px;
 }
