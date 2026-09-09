@@ -169,6 +169,40 @@
         </div>
       </div>
     </section>
+    <section class="form-wrapper">
+      <h2>Objednajte si portrét</h2>
+      <span>Vyplňte formulár a ozveme sa vám do 24 hodín s potvrdením objednávky</span>
+      <form class="form-grid" action="">
+        <div class="form-field">
+          <label for="customer-name">Vaše meno a priezvisko</label>
+          <input type="text" name="customer-name" id="customer-name" placeholder="Viktória Gardošíková" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="customer-email">E-mailová adresa</label>
+          <input type="email" name="customer-email" id="customer-email" placeholder="bibinka@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="customer-pet">Meno maznáčika</label>
+          <input type="text" name="customer-pet" id="customer-pet" placeholder="Bubinko" required>
+        </div>
+        <div class="form-field">
+          <label for="customer-telephone">Telefónne číslo</label>
+          <input type="tel" name="customer-telephone" id="customer-telephone" autocomplete="tel" placeholder="0969 696 969" required>
+        </div>
+        <div class="form-field form-field--full">
+          <label for="customer-photo">Fotografia Maznáčika</label>
+          <label class="upload-area" for="customer-photo">Kliknite sem a nahrajte fotografiu JPG, PNG do 10 MB</label>
+          <input class="file-input" type="file" id="customer-photo" name="customer-photo" accept=".jpg,.jpeg,.png" required>
+        </div>
+        <div class="form-field form-field--full">
+          <label for="customer-special-request">Špeciálne poznámky (nepovinné)</label>
+          <textarea name="customer-special-request" id="customer-special-request"></textarea>
+        </div>
+        <div class="form-field">
+          <button class="button-27" type="submit" >Odoslať objednávku</button>
+        </div>
+      </form>
+    </section>
     <footer>
       <section class="footer-wrapper">
         <div class="footer-left">
