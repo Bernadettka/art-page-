@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lora:wght@400..700&display=swap');
 :root {
     /* backrounds */
     --color-bg-main: #fefcf9;
@@ -17,8 +18,8 @@
     --color-text-muted: #a89e94;
     --color-text-ghost: #c4bdb4;
     /* Fonts */
-    --font-body: "DM Sans", sans-serif;
-    --font-heading: "Caveat", sans-serif;
+    --font-body: "Lora", serif;
+    --font-heading: "Caveat", cursive;
 
     --page-padding-inline: 5.2rem;
     --page-padding-block:1.7rem;
@@ -563,6 +564,34 @@ footer{
 }
 .footer-info-bar a:hover{
     color: var(--color-primary-hover);
-
 }
-
+.onas-hero{
+    font-family: var(--font-heading);
+    padding-inline: var(--page-padding-inline);
+    padding-block: var(--page-padding-block);
+    display: flex;
+    gap: 2rem;
+    
+}
+.onas-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.onas-hero img{
+     width: 300px;
+    height: auto;
+}
+.onas-container h1{
+    font-size: 4rem;
+    font-weight: bold;   
+}
+.onas-container span{
+    font-size: 2rem;
+}
+.onas-container p{
+    font-size: 1.4rem;
+}
+.onas-hero {
+    background-color: var(--color-bg-image-alt);
+}
