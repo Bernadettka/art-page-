@@ -146,64 +146,79 @@
         </div>
     </div>
     </section>
-    <section class="how-it-works">
+    <section class="how-it-works" id="ako-to-funguje">
       <div class="how-it-works-title">
-        <h5>Ako to funguje</h5>
-        <span>Získať portrét vášho maznáčika je jednoduchšie, ako si myslíte.</span>
-      </div> 
-      <img class="wavyline" src="assets/images/wavyline2.png" alt="">
+        <span class="section-kicker">od fotografie k portrétu</span>
+        <h2>Ako to funguje?</h2>
+        <p>Z pár jednoduchých krokov vznikne spomienka, ktorú si vystavíš doma.</p>
+      </div>
       <div class="how-it-works-description">
-        <div class="how-it-works-descriptin-photo">
-          <img src="assets/images/camera.png" alt="">
-          <h6>Nahrajte fotografiu maznáčika</h6>
-          <p>Pošlite nám jasnú, dobre osvetlenú fotografiu. Akýkoľvek uhol, akýkoľvek výraz - čím viac osobnosti, tým lepšie.</p>
-        </div>
-        <div class="how-it-works-descriptin-style">
+        <article class="step-card step-card--photo">
+          <span class="step-number">01</span>
+          <div class="step-illustration"><img src="assets/images/camera.png" alt=""></div>
+          <h3>Pošli fotografiu</h3>
+          <p>Vyber jasnú fotku, na ktorej dobre vidno tvár a jedinečný výraz tvojho maznáčika.</p>
+        </article>
+        <article class="step-card step-card--drawing">
+          <span class="step-number">02</span>
+          <div class="step-illustration"><img src="assets/images/pencil2.png" alt=""></div>
+          <h3>Vyber si portrét</h3>
+          <p>Vo formulári zvoľ veľkosť a prevedenie. Ak si nebudeš istá, poradíme ti.</p>
+        </article>
+        <article class="step-card step-card--delivery">
+          <span class="step-number">03</span>
+          <div class="step-illustration"><img src="assets/images/krabica.png" alt=""></div>
+          <h3>Portrét príde k tebe</h3>
+          <p>Hotovú kresbu starostlivo zabalím a pošlem pripravenú na zarámovanie.</p>
+        </article>
+      </div>   
+    </section>
+    <section class="form-wrapper" id="kontakt">
+      <div class="form-intro">
+        <h2>Objednaj si portrét</h2>
+        <p>Vyplň formulár a do 24 hodín sa ti ozvem s potvrdením a ďalšími informáciami.</p>
+        <div class="form-note">
           <img src="assets/images/pencil2.png" alt="">
-          <h6>Vyberte veľkosť a techniku</h6>
-          <p>Vyberte si spomedzi A4, A3 alebo rámovanej verzie. Zvoľte štýl - klasická ceruzka, živý akvarel alebo moderné digitálne.</p>
-        </div>
-        <div class="how-it-works-descriptin-shipping">
-          <img src="assets/images/box.jpg" alt="">
-          <h6>Prevezmite si svoje umelecké dielo</h6>
-          <p>Portrét dorazí keď Nikolka odpíše, bezpečne zabalený a pripravený na zarámovanie — alebo už zarámovaný.</p>
+          <span>Každý portrét kreslím ručne podľa tvojej fotografie.</span>
         </div>
       </div>
-    </section>
-    <section class="form-wrapper">
-      <h2>Objednajte si portrét</h2>
-      <span>Vyplňte formulár a ozveme sa vám do 24 hodín s potvrdením objednávky</span>
       <form class="form-grid" action="">
         <div class="form-field">
-          <label for="customer-name">Vaše meno a priezvisko</label>
-          <input type="text" name="customer-name" id="customer-name" placeholder="Viktória Gardošíková" autocomplete="name" required>
+          <label for="customer-name">Meno a priezvisko</label>
+          <input type="text" name="customer-name" id="customer-name" placeholder="Napríklad Viktória Gardošíková" autocomplete="name" required>
         </div>
         <div class="form-field">
           <label for="customer-email">E-mailová adresa</label>
-          <input type="email" name="customer-email" id="customer-email" placeholder="bibinka@gmail.com" autocomplete="email" required>
+          <input type="email" name="customer-email" id="customer-email" placeholder="tvoj@email.sk" autocomplete="email" required>
         </div>
         <div class="form-field">
           <label for="customer-pet">Meno maznáčika</label>
-          <input type="text" name="customer-pet" id="customer-pet" placeholder="Bubinko" required>
+          <input type="text" name="customer-pet" id="customer-pet" placeholder="Napríklad Bubinko" required>
         </div>
         <div class="form-field">
           <label for="customer-telephone">Telefónne číslo</label>
-          <input type="tel" name="customer-telephone" id="customer-telephone" autocomplete="tel" placeholder="0969 696 969" required>
+          <input type="tel" name="customer-telephone" id="customer-telephone" autocomplete="tel" placeholder="+421 900 000 000" required>
         </div>
         <div class="form-field form-field--full">
-          <label for="customer-photo">Fotografia Maznáčika</label>
-          <label class="upload-area" for="customer-photo">Kliknite sem a nahrajte fotografiu JPG, PNG do 10 MB</label>
+          <label for="customer-photo">Fotografia maznáčika</label>
           <input class="file-input" type="file" id="customer-photo" name="customer-photo" accept=".jpg,.jpeg,.png" required>
+          <label class="upload-area" for="customer-photo">
+            <img src="assets/images/camera.png" alt="">
+            <span class="upload-title">Klikni a vyber fotografiu</span>
+            <span class="upload-hint">JPG alebo PNG, maximálne 10 MB</span>
+          </label>
         </div>
         <div class="form-field form-field--full">
-          <label for="customer-special-request">Špeciálne poznámky (nepovinné)</label>
-          <textarea name="customer-special-request" id="customer-special-request"></textarea>
+          <label for="customer-special-request">Poznámka pre Nikolu <span>(nepovinné)</span></label>
+          <textarea name="customer-special-request" id="customer-special-request" placeholder="Napíš mi niečo o svojom maznáčikovi alebo o tom, ako si portrét predstavuješ."></textarea>
         </div>
-        <div class="form-field">
-          <button class="button-27" type="submit" >Odoslať objednávku</button>
+        <div class="form-field form-field--full form-submit">
+          <button class="button-27" type="submit">Odoslať dopyt <span aria-hidden="true">→</span></button>
+          <small>Ozvem sa ti do 24 hodín.</small>
         </div>
       </form>
     </section>
+    
     <footer>
       <section class="footer-wrapper">
         <div class="footer-heading">
